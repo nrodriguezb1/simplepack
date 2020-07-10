@@ -1,0 +1,21 @@
+{
+  "deviceId":"{device}",
+  "deviceTypeId":"{deviceTypeId}",
+  "timestamp" : "{time}",
+  "type" : "service_data_advanced",
+  "data":"{data}",
+  "seqNumber" : "{seqNumber}",
+  "operatorName":"{operatorName}",
+  "countryCode":"{countryCode}",
+  "messages":
+  [
+    {
+      "key" : "lqi",
+      "value" : "{lqi}"
+    },
+    {
+      "key" : "computedLocation",
+      "value" : "{computedLocation}"
+    }
+  ]
+}

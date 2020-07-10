@@ -1,0 +1,18 @@
+{
+    "topicRulePayload": {
+        "ruleDisabled": false, 
+        "sql": "SELECT * AS message FROM 'sigfoxtopic'", 
+        "description": "Dynamo DB rule to writte Sigfoxdata", 
+        "awsIotSqlVersion": "2016-03-23",
+        "actions": [{
+            "dynamoDB": {
+                "hashKeyField": "key", 
+                "roleArn": "arn:aws:dynamodb:eu-west-1:835401568033:table/Sigfoxdata", 
+                 "tableName": "Sigfoxdata", 
+                 "hashKeyValue": "${deviceId}", 
+                 "rangeKeyValue": "${timestamp()}", 
+                 "rangeKeyField": "timestamp"
+             }
+        }]
+    }
+}
